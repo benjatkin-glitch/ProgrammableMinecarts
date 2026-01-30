@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block LITHIUM_BLOCK = registerBlock("lithium_block", new Block(AbstractBlock.Settings.create().strength(2f)))
+    public static final Block LITHIUM_BLOCK = registerBlock("lithium_block", new Block(AbstractBlock.Settings.create().strength(2f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
