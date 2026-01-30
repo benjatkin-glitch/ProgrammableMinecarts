@@ -16,6 +16,12 @@ public class ModBlocks {
     public static final Block LITHIUM_BLOCK = registerBlock("lithium_block",
             new Block(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block RAW_LITHIUM_BLOCK = registerBlock("raw_lithium_block",
+            new Block(AbstractBlock.Settings.create().strength(1.5f)
+                    .requiresTool()));
+
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -33,6 +39,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LITHIUM_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.RAW_LITHIUM_BLOCK);
         });
 
     }
