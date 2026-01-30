@@ -3,5 +3,7 @@
   "item.programmableminecarts.raw_lithium": "Raw Lithium",
 
   "block.programmableminecarts.lithium_block": "Block of Lithium",
-  "block.programmableminecarts.raw_lithium_block": "Block of Raw Lithium"
+  "block.programmableminecarts.raw_lithium_block": "Block of Raw Lithium",
+
+  "itemgroup.programmableminecarts.programmable_minecarts_items": "Programmable Minecarts"
 }
