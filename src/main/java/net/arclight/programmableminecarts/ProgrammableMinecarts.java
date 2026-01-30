@@ -1,5 +1,7 @@
 package net.arclight.programmableminecarts;
 
+import net.arclight.programmableminecarts.block.ModBlocks;
+import net.arclight.programmableminecarts.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class ProgrammableMinecarts implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
