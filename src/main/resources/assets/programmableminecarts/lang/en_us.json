@@ -7,5 +7,7 @@
   "block.programmableminecarts.lithium_ore": "Lithium Ore",
   "block.programmableminecarts.lithium_deepslate_ore": "Lithium Deepslate Ore",
 
+  "block.programmableminecarts.programmer": "Programmer",
+
   "itemgroup.programmableminecarts.programmable_minecarts_items": "Programmable Minecarts"
 }

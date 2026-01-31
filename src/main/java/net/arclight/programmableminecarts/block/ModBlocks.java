@@ -1,6 +1,7 @@
 package net.arclight.programmableminecarts.block;
 
 import net.arclight.programmableminecarts.ProgrammableMinecarts;
+import net.arclight.programmableminecarts.block.custom.ProgrammerBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -29,6 +30,8 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+    public static final Block PROGRAMMER_BLOCK = registerBlock("programmer",
+            new ProgrammerBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

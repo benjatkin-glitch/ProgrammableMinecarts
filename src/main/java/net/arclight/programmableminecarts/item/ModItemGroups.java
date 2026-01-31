@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LITHIUM_BLOCK);
                         entries.add(ModBlocks.LITHIUM_ORE);
                         entries.add(ModBlocks.LITHIUM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.PROGRAMMER_BLOCK);
 
                     }).build());
 
