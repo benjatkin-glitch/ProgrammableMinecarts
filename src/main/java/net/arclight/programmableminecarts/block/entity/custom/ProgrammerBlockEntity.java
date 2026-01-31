@@ -33,9 +33,15 @@ public class ProgrammerBlockEntity extends BlockEntity {
                 entity -> true
         );
 
-        if(!minecarts.isEmpty()) {
-            for(AbstractMinecartEntity minecart : minecarts) {
-                minecart.setVelocity(Vec3d.ZERO);
+        if (!minecarts.isEmpty()) {
+            for (AbstractMinecartEntity minecart : minecarts) {
+                double distance = Math.sqrt(targetPos.getSquaredDistanceFromCenter(minecart.getX(), minecart.getY(), minecart.getZ()));
+                Vec3d velocity = minecart.getVelocity();
+                if (distance < 0.45) {
+                    minecart.setVelocity(Vec3d.ZERO);
+                } else {
+                    minecart.setVelocity(velocity.normalize().multiply(distance / 10));
+                }
                 minecart.velocityDirty = true;
             }
         }
