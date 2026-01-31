@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "programmableminecarts:lithium_block",
+    "programmableminecarts:raw_lithium_block",
+    "programmableminecarts:lithium_ore",
+    "programmableminecarts:lithium_deepslate_ore"
+  ]
+}

@@ -4,6 +4,8 @@
 
   "block.programmableminecarts.lithium_block": "Block of Lithium",
   "block.programmableminecarts.raw_lithium_block": "Block of Raw Lithium",
+  "block.programmableminecarts.lithium_ore": "Lithium Ore",
+  "block.programmableminecarts.lithium_deepslate_ore": "Lithium Deepslate Ore",
 
   "itemgroup.programmableminecarts.programmable_minecarts_items": "Programmable Minecarts"
 }

@@ -20,6 +20,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_LITHIUM_BLOCK);
                         entries.add(ModItems.LITHIUM_INGOT);
                         entries.add(ModBlocks.LITHIUM_BLOCK);
+                        entries.add(ModBlocks.LITHIUM_ORE);
+                        entries.add(ModBlocks.LITHIUM_DEEPSLATE_ORE);
+
                     }).build());
 
 
