@@ -3,6 +3,8 @@
     "facing=north": { "model": "programmableminecarts:block/programmer" },
     "facing=south": { "model": "programmableminecarts:block/programmer", "y": 180 },
     "facing=west":  { "model": "programmableminecarts:block/programmer", "y": 270 },
-    "facing=east":  { "model": "programmableminecarts:block/programmer", "y": 90 }
+    "facing=east": {
+      "model": "programmableminecarts:block/programmer",
+      "y": 90 }
   }
 }
