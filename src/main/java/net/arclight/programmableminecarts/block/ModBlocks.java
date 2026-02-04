@@ -33,7 +33,12 @@ public class ModBlocks {
             new ProgrammerBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
 
     public static final Block RAIL_POINTS = registerBlock("points",
-            new RailPoints(AbstractBlock.Settings.create().strength(0.5f).requiresTool()));
+            new RailPoints(AbstractBlock.Settings.create()
+                    .strength(0.5f)
+                    .requiresTool()
+                    .noCollision() // To ensure we don't step upwards
+                    .nonOpaque() // Otherwise you can X-Ray
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

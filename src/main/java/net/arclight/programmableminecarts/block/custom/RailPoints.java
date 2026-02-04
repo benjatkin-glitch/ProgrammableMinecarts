@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.block.AbstractRailBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.RailBlock;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -14,7 +15,8 @@ import net.minecraft.state.property.Property;
 
 public class RailPoints extends AbstractRailBlock {
     public static final EnumProperty<RailShape> SHAPE = Properties.RAIL_SHAPE;
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+    public static final MapCodec<RailPoints> CODEC = createCodec(RailPoints::new);
+//    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED; // Not needed - super class AbstractRailBlock has this anyway
 
     public RailPoints(Settings settings) {
         super(false, settings);
@@ -30,8 +32,8 @@ public class RailPoints extends AbstractRailBlock {
     }
 
     @Override
-    protected MapCodec<? extends AbstractRailBlock> getCodec() {
-        return null;
+    protected MapCodec<RailPoints> getCodec() {
+        return CODEC;
     }
 
     @Override
